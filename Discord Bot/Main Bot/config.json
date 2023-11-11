@@ -1,10 +1,10 @@
 {
-  "TOKEN": "Nzg4NjU4MjUzMTQyODE4ODM3.X9mtPA.NyYbqpE6zUHt_Ms1GcowWPNOAcE",
-  "YOUTUBE_API_KEY": "AIzaSyDEb-Ws79wuTcmE7Vt783eU48jK6jqvjyw",
+  "TOKEN": "",
+  "YOUTUBE_API_KEY": "",
   "SOUNDCLOUD_CLIENT_ID": "",
   "MAX_PLAYLIST_SIZE": 10,
   "STAY_TIME": 30,
   "DEFAULT_VOLUME": 100,
-  "google": "AIzaSyAB2gL_o6e_LenJeYzfSC6ElsuIrYkzQlY",
-  "owners": ["575680249380077588", "751028800720207902"]
+  "google": "",
+  "owners": ["", ""]
 }

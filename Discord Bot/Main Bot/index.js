@@ -13,7 +13,7 @@ const { owners } = require('./config.json')
 const jimp = require("jimp");
 const welcomes = require('./assets/welcome.json')
 
-mongoose.connect('mongodb+srv://BK-Bot:burnknuckle@cluster0.uo7cp.mongodb.net/test', {
+mongoose.connect('xxx', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: true,
@@ -405,13 +405,13 @@ client.on('message', async (message) => {
             return message.channel.send(`Your Server Prefix Is \`${prefix}\``);
         }
     } else if (message.content == 'servers'){
-        if(message.author.id == '751028800720207902' || message.author.id == '575680249380077588'){
+        if(message.author.id == 'x' || message.author.id == 'x'){
             const Guilds = client.guilds.cache.map(guild => guild.name);
             message.channel.send(Guilds)
          } else return;
 
     } else if (message.content == 'hms'){
-        if(message.author.id == '751028800720207902' || message.author.id == '575680249380077588'){
+        if(message.author.id == 'x' || message.author.id == 'x'){
             message.channel.send(`${client.guilds.cache.size} Servers`)
          } else return;
 

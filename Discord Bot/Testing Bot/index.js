@@ -6,8 +6,7 @@ client.queue = new Map();
 const prefix = require('./models/onlyguild');
 
 
-//mongoose.connect('mongodb+srv://BK-Bot:burnknuckle@cluster0.uo7cp.mongodb.net/test', {
-    mongoose.connect('mongodb+srv://BurnKnuckleTestings:BurnKnuckleTestings@bksad.qhbnz.mongodb.net/DATA', {
+    mongoose.connect('', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: true,
@@ -15,7 +14,7 @@ const prefix = require('./models/onlyguild');
 
 client.on("warn", console.warn); 
 client.on("error", console.error);
-client.login("Nzg4NjU4MjUzMTQyODE4ODM3.X9mtPA.NyYbqpE6zUHt_Ms1GcowWPNOAcE")//client.login(process.env.token);
+client.login("")//client.login(process.env.token);
 client.snipe = new Map()
 client.recent = new Set();
 client.leveling = require("./until/LevelingUtil")
@@ -30,12 +29,12 @@ client.on('message', async (message) => {
         message.react(reactionEmoji);
     }
 	if (message.content === 'wtest') {
-        if(message.author.id == '751028800720207902' || message.author.id == '575680249380077588'){
+        if(message.author.id == '' || message.author.id == ''){
             client.emit('guildMemberAdd', message.member);
         } else return;
     }
     else if (message.content === 'ltest') {
-        if(message.author.id == '751028800720207902' || message.author.id == '575680249380077588'){
+        if(message.author.id == '' || message.author.id == ''){
             client.emit('guildMemberRemove', message.member);
         } else return;
     }
@@ -51,12 +50,12 @@ client.on('message', async (message) => {
             return message.channel.send(`Your Server Prefix Is \`${prefix}\``);
         }
     } else if (message.content == 'hms'){
-        if(message.author.id == '751028800720207902' || message.author.id == '575680249380077588'){
+        if(message.author.id == '' || message.author.id == ''){
             message.channel.send(`${client.guilds.cache.size} Servers`)
          } else return;
 
     } else if(message.content == 'servers'){
-        if(message.author.id === '751028800720207902' || message.author.id === '575680249380077588'){
+        if(message.author.id === '' || message.author.id === ''){
             const Guilds = client.guilds.cache.map(guild => guild.name);
                 let me = new Discord.MessageEmbed()
                     .setTitle(`Total Server List! of ${client.user.username}`)
@@ -78,7 +77,7 @@ client.on('message', async (message) => {
                     })
         }
     } else if(message.content == 'botinfo'){
-        if(message.author.id === '751028800720207902' || message.author.id === '575680249380077588'){
+        if(message.author.id === '' || message.author.id === ''){
             let me = new Discord.MessageEmbed()
                 .setTitle(`BotInfo! of ${client.user.username}!`)
                 .setDescription(`> About Bots Outer Shell! [🛡️]: \nTotal Servers: ${client.guilds.cache.size} Servers!\nTotal Channels: ${client.channels.cache.size} Channels!\nTotal Users: ${client.users.cache.size} Users! [<a:Girl_Laughing:785499172710776862>]\n\n> **About Inner Shell!** [<:bot:805306609957077022>]: \nClient Name: ${client.user}\nClient ID: ${client.user.id}\nClient Discriminator: ${client.user.discriminator}\nTotal Commands: ${client.commands.size} Comamnds!\nTotal Aliases: ${client.aliases.size}\nBot Started At: ${moment(client.readyAt).format('LLLL')}\nBot Created At: ${moment(client.user.createdAt).format('LLLL')}\nLibrary Used: Discord.js! [<:discordjs:817734881101479986>]`)
