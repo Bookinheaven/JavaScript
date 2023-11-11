@@ -1,0 +1,23 @@
+{
+    "common": {
+        "symbol": "Fish 🐠",
+        "max": 250,
+        "min": 1000
+    },
+    "uncommon": {
+        "symbol": "Elephant :elephant: [1000 Tons!]",
+        "max": 20050,
+        "min": 10000
+    },
+    "rare": {
+        "symbol": "Money <a:money:800987439559737344>",
+        "max": 50000,
+        "min": 15000
+    },
+    "legendary": {
+        "symbol": "Padlock 🔒",
+        "max": 5,
+        "min": 2        
+    }
+
+}

@@ -1,0 +1,32 @@
+{
+	"Insects": {
+		"symbol": ["🐜","🐛" ,"🦋", "🦟" , "🐝", "🕷️", "🐞", "🦗"],
+		"name":["Ant", "Bug", "Butterfly", "Mosquito", "Honeybee", "Spider", "Lady Beetle", "Cricket"],
+		"max": 5000,
+		"min": 1000
+	},
+	"common": {
+		"symbol": [":dog:",":cat:", ":mouse:",":hamster:",":rabbit:",":fox:",":monkey:",":bird:"],
+		"name": ["Dog","Cat", "Mouse","Hamster","Rabbit","Fox","Monkey", "bird"],
+		"max": 2500,
+		"min": 1000
+	},
+	"uncommon": {
+		"symbol": [":wolf:",":bat:",":owl:",":eagle:",":dodo:",":elephant:",":zebra:",":deer:"],
+		"name": ["Wolf","Bat","Owl","Eagle","Dodo","Elephant","Zebra","Deer"],
+		"max": 5000,
+		"min": 1800
+	},
+	"rare": {
+		"symbol": [":sloth:",":otter:",":beaver:",":skunk:",":raccoon:",":tiger2:",":orangutan:",":hippopotamus:"],
+		"name": ["Sloth","Otter","Beaver","Skunk","Raccoon","Tiger",":Orangutan","Hippopotamus"],
+		"max": 7500,
+		"min": 3000
+	}, 
+  "legendary": {
+	"symbol": ["🐺",":dragon:",":peacock:",":mammoth:",":t_rex:",":sauropod:",":unicorn:",":polar_bear:"],
+	"name":["Dire wolve","Dragon","Peacock","Mammoth","T Rex","Sauropod","Unicorn","Polar Bear"],
+    "max": 10000,
+    "min": 5000
+  }
+}
