@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const mongoose = require('mongoose');
 const moment = require('moment')
 client.queue = new Map();
-const prefix = require('./models/onlyguild');
+const prefix = require('./models/onlyguild.js');
 
 
     mongoose.connect('', {
@@ -17,7 +17,7 @@ client.on("error", console.error);
 client.login("")//client.login(process.env.token);
 client.snipe = new Map()
 client.recent = new Set();
-client.leveling = require("./until/LevelingUtil")
+client.leveling = require("./until/LevelingUtil.js")
 require("./handler/loadCommands.js")(client);
 require("./handler/Event.js")(client);
 
